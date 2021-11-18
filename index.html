@@ -78,17 +78,17 @@
                     <p>
                         I am a highly competent IT professional with a proven track record in <strong> Ecommerce Web  Development and Mangement , Using version control tool , Deployment tool and Leading team. </strong> I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients.</p><p> I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.
                     </p>
-                    <h4>Achievements</h4>
+                    <h4>Accomplishments</h4>
                     <ul>
-                        <li><p>More than 7 years of experience in Webdevelopment</p></li>
-                        <li><p>Experience in Most of the Ecommerce framework</p></li>
-                        <li><p>Experience in PWA Backend Support</p></li>
-                        <li><p>Experience in Javascript and Frontend Technology</p></li>
-                        <li><p>Experience in Version Control tool</p></li>
+                        <li><p>Experience developing websites for more than 7 years.</p></li>
+                        <li><p>Experience with most Ecommerce frameworks.</p></li>
+                        <li><p>Support experience for PWA backends.</p></li>
+                        <li><p>Javascript and front-end technology experience.</p></li>
+                        <li><p>Experience with version control software</p></li>
                         <li><p>Experience in international projects</p></li>
-                        <li><p>Used deployment tool</p></li>
-                        <li><p>Experience in Managing teams</p></li>
-                        <li><p>Worked in Agile team</p></li>
+                        <li><p>Deployment tool used</p></li>
+                        <li><p>Team management experience.</p></li>
+                        <li><p>Agile team member.</p></li>
                     </ul>
                 </div>
             </div>
@@ -118,7 +118,7 @@
     </div>
     <!-- End #experience -->
 
-    <div id="education">
+    <div id="education" style="display: none;">
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>University of Ottawa</h3>
@@ -150,7 +150,7 @@
     </div>
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
+    <div id="projects" class="background-alt" style="display: none;">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
@@ -193,32 +193,18 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+            <li><a href="https://www.php.net/">PHP</a></li>
+            <li><a href="https://www.mysql.com/">Mysql</a></li>
+            <li><a href="https://www.javascript.com/">Javascript</a></li>
+            <li><a href="https://info2.magento.com/Magento-Demo-Request-APAC.html?utm_medium=paid-search&utm_source=google&utm_campaign=IN_11008_2020_PPC_Demo-Request-Form&mv=search&edtamo=true&ef_id=Cj0KCQiAkNiMBhCxARIsAIDDKNUTzZ2BUXnI__imaquBXOZqNIOFjG6EJGUPNggRFaqfHqt5JtfSTT8aAkTAEALw_wcB:G:s&s_kwcid=AL!3085!3!523917254879!e!!g!!magento!13251680156!124202655033&gclid=Cj0KCQiAkNiMBhCxARIsAIDDKNUTzZ2BUXnI__imaquBXOZqNIOFjG6EJGUPNggRFaqfHqt5JtfSTT8aAkTAEALw_wcB">Magento</a></li>
+            <li><a href="https://www.salesforce.com/in/products/commerce-cloud/overview/">Sales Force Commerce Cloud</a></li>
+            <li><a href="https://graphql.org/">Graphql</a></li>
+            <li><a href="https://laravel.com/">Laravel</a></li>
+            <li><a href="https://knockoutjs.com/">Knockout Js</a></li>
+            <li><a href="https://vuejs.org/">Basics of Vue Js</a></li>
+            <li><a href="https://reactjs.org/">Basics of React Js</a></li>
+            <li><a href="https://github.com/">github</a></li>
+            <li><a href="https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=93058444980&campaign=9124878606&creative=542638212437&device=c&keyword=jira&matchtype=e&network=g&placement=&ds_kids=p51242181056&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gclid=Cj0KCQiAkNiMBhCxARIsAIDDKNXkVUkwsJqaZHUspQUGwAOldCX0Pq1FESu0Un3lSHz9amPYJuM0x_IaApl-EALw_wcB&gclsrc=aw.ds">Jira</a></li>
         </ul>
     </div>
     <!-- End #skills -->
@@ -242,7 +228,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2020 YOUR NAME
+                        Copyright &copy; <span class="today-date" id="today-date"></span> Shibin
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -279,6 +265,11 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script type="text/javascript">
+        const d = new Date();
+        var div = document.getElementById('today-date');
+        div.innerHTML += d.getFullYear();
+    </script>
 </body>
 
 </html>
