@@ -79,3 +79,9 @@ header a:focus , header a:hover {
 body {
     font-family: 'rawline', sans-serif;
 }
+.project-image img{
+    width: 310px;
+}
+a {
+    color: #74808a;
+ }   
