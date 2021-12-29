@@ -84,4 +84,14 @@ body {
 }
 a {
     color: #74808a;
+ }
+ header{
+    z-index: 100;
  }   
+ header ul#menu{
+    position: fixed;
+    /* align-content: center; */
+    width: 100%;
+    display: block;
+    /* z-index: 1000; */
+ }
